@@ -12,17 +12,17 @@ function applyDeviceMode() {
 }
 
 function openInvitation() {
-  if (entry.classList.contains("is-opening") || entry.hidden) return;
+  if (!invitation.hidden || entry.hidden) return;
 
   invitation.hidden = false;
   window.scrollTo(0, 0);
-  entry.classList.add("is-opening");
-  window.setTimeout(() => {
+  requestAnimationFrame(() => {
+    invitation.classList.add("is-visible");
     entry.classList.add("is-hidden");
-  }, 1250);
+  });
   window.setTimeout(() => {
     entry.hidden = true;
-  }, 1760);
+  }, 920);
 }
 
 entry.addEventListener("pointerdown", openInvitation, { passive: true });
