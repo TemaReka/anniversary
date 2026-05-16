@@ -19,11 +19,6 @@ body {
   font-family: "Cormorant Garamond", Georgia, serif;
 }
 
-html {
-  scroll-snap-type: y proximity;
-  scroll-padding-top: 0;
-}
-
 body {
   overflow-x: hidden;
 }
@@ -94,8 +89,6 @@ body {
   width: 100%;
   min-height: calc(100vw * 932 / 430);
   overflow: hidden;
-  scroll-snap-align: start;
-  scroll-snap-stop: normal;
   isolation: isolate;
 }
 
