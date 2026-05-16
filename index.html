@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Приглашение</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Forum&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="desktop-gate" id="desktopGate">
+      <div class="desktop-gate__inner">
+        <img src="assets/img/entry_point_main_element.png" alt="" class="desktop-gate__seal" />
+        <p>Откройте приглашение с телефона</p>
+      </div>
+    </div>
+
+    <main class="app" id="app" aria-hidden="true">
+      <section class="entry" id="entry" aria-label="Открыть приглашение" role="button" tabindex="0">
+        <img src="assets/examples/1.jpg" alt="" class="entry__image" />
+      </section>
+
+      <section class="invitation" id="invitation" hidden>
+        <article class="screen screen--intro">
+          <img src="assets/img/main_bg.jpg" alt="" class="edge edge--fill" />
+          <div class="copy copy--intro">
+            <h1>Дорогие друзья!</h1>
+            <p>
+              Приглашаю вас провести этот вечер вместе со мной. В красивой обстановке,
+              в хорошем настроении и в окружении людей, которые действительно важны.
+            </p>
+            <p>Буду рада видеть каждого!</p>
+          </div>
+          <img src="assets/img/env_first_main_screen.png" alt="" class="edge envelope" />
+        </article>
+
+        <article class="screen screen--program">
+          <img src="assets/img/main_bg.jpg" alt="" class="edge edge--fill" />
+          <img src="assets/img/main_curtain.png" alt="" class="edge curtain" />
+          <div class="copy copy--place">
+            <h2>Место встречи</h2>
+            <p>404143, Колобовка, Ахтуба, Среднеахтубинский район Волгоградской области, гостиничный комплекс «Андреев Клаб».</p>
+            <a class="route-link" href="https://yandex.ru/maps/?text=%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B5%D0%B2%20%D0%9A%D0%BB%D0%B0%D0%B1" target="_blank" rel="noreferrer">Маршрут</a>
+            <p class="hint">Для удобства: при построении маршрута или вызове такси используйте Andreeff Club.</p>
+          </div>
+          <div class="copy copy--program">
+            <h2>Программа вечера</h2>
+            <img src="assets/img/main_evning_program.png" alt="16:30 сбор гостей, 17:30 посадка гостей, 18:00 поздравления, 19:00 караоке, 21:00 кавер-группа" />
+          </div>
+        </article>
+
+        <article class="screen screen--dress">
+          <img src="assets/img/main_bg.jpg" alt="" class="edge edge--fill" />
+          <div class="copy copy--dress">
+            <h2>Дресс-код</h2>
+            <p>Формат вечера - красная ковровая дорожка.</p>
+            <p>Сдержанная роскошь, четкие силуэты, акценты на деталях.</p>
+            <p>Важно общее ощущение. Ваша уверенность и стиль.</p>
+          </div>
+          <img src="assets/img/dress_code_star.png" alt="" class="edge star" />
+          <p class="dress-note">
+            На территории есть бассейн, речка и баня, поэтому при желании можно взять с собой плавки и полотенца.
+          </p>
+        </article>
+
+        <article class="screen screen--final">
+          <img src="assets/img/main_bg.jpg" alt="" class="edge edge--fill" />
+          <img src="assets/img/bulb_last_screen.png" alt="" class="edge final-curtain" />
+          <div class="copy copy--gift">
+            <p>У меня есть небольшое пожелание: вместо цветов я с большим удовольствием приму хорошее вино.</p>
+          </div>
+          <img src="assets/img/bottles_last_screen.png" alt="" class="edge bottles" />
+          <div class="copy copy--photo">
+            <p>В этот вечер нас ждет приятная атмосфера, общение и фотосъемка, чтобы сохранить самые красивые и теплые моменты.</p>
+          </div>
+          <p class="final-note">Буду счастлива провести этот день вместе!</p>
+        </article>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
