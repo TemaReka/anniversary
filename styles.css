@@ -313,7 +313,7 @@ p {
   top: 165px;
   right: -6px;
   width: min(86vw, 390px);
-  z-index: 1;
+  z-index: -1;
 }
 
 .copy--photo {
